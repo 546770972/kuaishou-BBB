@@ -1,12 +1,12 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: bbb步步宝11
+name: fhxz富豪小镇1
 
 on:
   workflow_dispatch:
   schedule:
-     - cron: '0 8-23/3 * * *'
+     - cron: '*/10 8-23 * * *'
   watch:
     types: started
 jobs:
@@ -25,12 +25,12 @@ jobs:
         run: |
           cd ~/BD
           npm install
-      - name: '运行 【步步宝2.14】'
+      - name: '运行 【富豪小镇1】'
         run: |
           cd ~/BD
-          node BBB.js
+          node FHXZ.js
         env:
-          BBB_COOKIE: ${{ secrets.BBB_COOKIE11 }}
+          FHXZ_COOKIE: ${{ secrets.FHXZURL_COOKIE }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
